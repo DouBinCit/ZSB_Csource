@@ -4,11 +4,12 @@ int main()
 {
 	double a, b, c, x1, x2, p, q,disc;
 
-	printf("ÇëÊäÈë·Ö±ğÊäÈëa,b,cµÄÖµ:");
-	scanf("%lf%lf%lf", &a, &b, &c);//&È¡Ö·ÔËËã·û
+	printf("è¯·è¾“å…¥åˆ†åˆ«è¾“å…¥a,b,cçš„å€¼:");
+	scanf("%lf%lf%lf", &a, &b, &c);//&å–å€è¿ç®—ç¬¦
 
-	if (fabs(a) <= 1e-6) { //1e-6±íÊ¾0.000001
-		printf("·ÇÒ»Ôª¶ş´Î·½³Ì");
+	if (fabs(a) <= 1e-6) { //1e-6è¡¨ç¤º0.000001
+	//fabs()å‡½æ•°ç”¨æ¥æ±‚æµ®ç‚¹æ•°çš„ç»å¯¹å€¼
+		printf("éä¸€å…ƒäºŒæ¬¡æ–¹ç¨‹");
 	}
 	else {
 		disc = b * b - 4 * a * c;
@@ -23,7 +24,8 @@ int main()
 		else if (disc < 1e-6) {
 			p = (-b) / (2 * a);
 			q = (sqrt(-disc) / (2 * a));
-			printf("x1=%lf+%lfi\nx2=%lf+%lfi", p, q, p, q);
+			printf("x1=%lf+%lfi\n", p, q);
+			printf("x2=%lf-%lfi", p, q);
 		}
 	}
 	return 0;
