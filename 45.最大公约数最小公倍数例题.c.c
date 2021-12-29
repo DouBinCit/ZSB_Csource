@@ -2,7 +2,7 @@
 int main(){
 	int m,n,temp,i;
 	
-	printf("Õˆ·Ö„eİ”ÈëƒÉ‚€Õû”µ:");
+	printf("è«‹åˆ†åˆ¥è¼¸å…¥å…©å€‹æ•´æ•¸:");
 	scanf("%d%d",&m,&n);
 	
 	if(m>n) temp = m;
@@ -10,11 +10,11 @@ int main(){
 		
 	for(i=temp;i>=1;i--){
 		if(m%i==0&&n%i==0){
-			printf("×î´ó¹«¼s”µ:%-5d",i);
+			printf("æœ€å¤§å…¬ç´„æ•¸:%-5d",i);
 			break;
 		}		
 	}
-	printf("×îĞ¡¹«±¶”µ:%-5d",m*n/i);
+	printf("æœ€å°å…¬å€æ•¸:%-5d",m*n/i);
 	
 	return 0;
 }
