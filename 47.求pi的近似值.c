@@ -4,9 +4,9 @@ int main(){
 	
 	double pi = 0;
 	
-	int m = 1;//·Ö×Ó
-	double n = 1.0;//·ÖÄ¸
-	double term = 1.0;//í—
+	int m = 1;//Â·Ã–Ã—Ã“
+	double n = 1.0;//Â·Ã–Ã„Â¸
+	double term = 1.0;//Ã­â€”
 	while(fabs(term)>=1e-8){
 		pi = pi + term;
 		m = -m;
